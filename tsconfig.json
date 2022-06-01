@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+      "outDir": "dist",
+      "esModuleInterop": true,
+      "strictNullChecks": false,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "lib": [
+          "ES6"
+      ]
+  }
+}
