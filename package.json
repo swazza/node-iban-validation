@@ -11,7 +11,12 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
-    "@types/node": "^17.0.38"
+    "@types/jest": "^28.1.0",
+    "@types/mathjs": "^9.4.2",
+    "@types/node": "^17.0.38",
+    "jest": "^28.1.0",
+    "jest-junit": "^13.2.0",
+    "ts-jest": "^28.0.3"
   },
   "scripts": {
     "build": "tsc",
@@ -19,6 +24,7 @@
     "start:dev": "ts-node src/index.ts",
     "start": "node dist/index.js",
     "start:image": "docker run --name iban-validation -p 3000:3000 -d pfc/iban-validation",
-    "stop:image": "docker rm -f iban-validation"
+    "stop:image": "docker rm -f iban-validation",
+    "test:unit": "jest --config jest.unit.js"
   }
 }
